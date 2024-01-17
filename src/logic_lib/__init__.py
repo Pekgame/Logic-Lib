@@ -7,20 +7,20 @@ def AND(a: bool, b: bool) -> bool:
 def NAND(a: bool, b: bool) -> bool:
     return not (a and b)
 
-def OR(*args: bool):
+def OR(*args: bool) -> bool:
     for arg in args:
         if arg:
             return True
     return False
 
-def NOR(*args):
+def NOR(*args: bool) -> bool:
     for arg in args:
         if arg:
             return False
     return True
 
-def XOR(a, b):
+def XOR(a: bool, b: bool) -> bool:
     return a != b
 
-def XNOR(a, b):
+def XNOR(a: bool, b: bool) -> bool:
     return a == b
